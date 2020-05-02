@@ -1,0 +1,35 @@
+:root {
+	--red: #fc7373;
+	--cyan: #1eb7d3;
+	--orange: #e29f34;
+	--purple: #9655ff;
+	--green: #00958f;
+	--dark-red: #d14040;
+	--pink: #e5328b;
+	--kinda-blue: #5589ff;
+}
+
+* {
+	margin: 0;
+	color: white;
+}
+
+#container {
+	display: grid;
+	margin: 100px auto 100px auto;
+	max-width: 1200px;
+	padding: 0 15px;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	grid-auto-rows: 20px;
+	grid-gap: 15px 15px;
+}
+
+.grid-content {
+	padding: 20px;
+	border-radius: 7px;
+	height: inherit;
+}
+
+.grid-content > p:first-child {
+	font-weight: bold;
+}
